@@ -29,3 +29,14 @@ A simple desktop CRUD application built with WinForms and ADO.NET, demonstrating
 2. Open in Visual Studio
 3. Restore NuGet packages (if any)
 4. Create a local SQL Server DB using the script below:
+
+```sql
+CREATE DATABASE CustomerDB;
+USE CustomerDB;
+
+CREATE TABLE Customers (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(100),
+    Email NVARCHAR(100),
+    Phone NVARCHAR(20)
+);
